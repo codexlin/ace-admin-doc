@@ -6,6 +6,21 @@ const description = "A VitePress Site"
 export default defineConfig({
   title,
   description,
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg',type: 'image/svg+xml' }],
+    [
+      'link',
+      { rel: 'preconnect', href: 'https://fonts.googleapis.com' }
+    ],
+    [
+      'link',
+      { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
+    ],
+    [
+      'link',
+      { href: 'https://fonts.googleapis.com/css2?family=Roboto&display=swap', rel: 'stylesheet' }
+    ]
+  ],
   themeConfig: {
     i18nRouting: false,
     search: {
@@ -16,7 +31,7 @@ export default defineConfig({
     nav,
     sidebar,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/xoxosos/vue-ace-admin' }
+    ],
   }
 })
