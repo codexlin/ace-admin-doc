@@ -2,18 +2,31 @@ import { DefaultTheme } from 'vitepress';
 export const nav: DefaultTheme.NavItem[] = [
   // 表示docs/index.md
     {  text: '首页',  link: '/' },
-    { text: 'Examples', link: '/markdown-examples' },
+    {
+      text: '项目介绍',
+      items: [
+        {
+          text: '简介',
+          link: '/md/introduction/' // 对应docs/column/Algorithm下的idnex.md文件
+        },
+        {
+          text: '介绍1',
+          link: '/md/introduction/i1' // 对应docs/column/Algorithm下的idnex.md文件
+        },
+        {
+          text: '介绍2',
+          link: '/md/introduction/i2' // 对应docs/column/Algorithm下的idnex.md文件
+        }
+      ]
+    },
+    { text: '使用文档', link: '/md/documentation/' },
     {
       text: '关于我',
       items: [
-        { text: 'Github', link: 'https://github.com/Jacqueline712' },
-        {
-          text: '掘金',
-          link: 'https://juejin.cn/user/3131845139247960/posts'
-        },
+        { text: 'Github', link: 'https://github.com/xoxosos' },
         {
           text: '博客园',
-          link: 'https://pzfqk98jn1.feishu.cn/wiki/space/7193915595975491587?ccm_open_type=lark_wiki_spaceLink'
+          link: 'https://www.cnblogs.com/pglin/'
         }
       ]
     }

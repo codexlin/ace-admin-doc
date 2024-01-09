@@ -6,16 +6,16 @@ layout: home
 hero:
   name: "Ace Admin Doc"
   text: "A VitePress Site"
-  tagline: My great project tagline
+  tagline: Simple, powerful, and fast.
   image:
     src: /logo.svg
     alt: VitePress
   actions:
     - theme: brand
-      text: 进入主页
-      link: /markdown-examples
+      text: 项目介绍
+      link: /md/introduction/
     - theme: alt
-      text: API Examples
+      text: 详细文档
       link: /api-examples
 
 # 按钮下方的描述
