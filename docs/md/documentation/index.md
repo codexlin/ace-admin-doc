@@ -1,89 +1,131 @@
----
-outline: deep
----
+## Ace Admin 项目介绍
 
-# 使用文档
+### 1. 简介
 
+Ace Admin 是一个免费开源的前端解决方案，用于构建现代高效的中后台管理系统。它采用最新和最前沿的技术，提供了清晰的结构、优雅的代码和丰富的功能，开箱即用。Ace Admin 让开发者能够快速构建美观且功能强大的中后台管理系统。
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+### 2. 项目亮点
 
-## Syntax Highlighting
+Ace Admin 基于坚实的现代技术基础，成为构建现代 Web 应用的强大工具。
 
-VitePress provides Syntax Highlighting powered by [Shikiji](https://github.com/antfu/shikiji), with additional features like line-highlighting:
+**主要特点：**
 
-**Input**
+- **前沿技术：** 利用 Vue 3.4、TypeScript 5.x、Antd-Vue 4.x、Pinia 2.x 和 Vite 5.x，Ace Admin 拥抱了 Web 开发的最新进展。
+- **简单清晰的结构：** 项目设计简洁，避免复杂的抽象，提供了清晰明了的结构。
+- **丰富的功能：** Ace Admin 包含了用户管理、RBAC 权限控制、多布局、多主题等一系列内置功能。
+- **详细的文档：** 提供了所有功能和配置的详细文档，便于理解和使用项目。
+- **多环境支持：** Ace Admin 支持多种环境（开发、测试、生产），确保不同开发阶段的顺畅工作流程。
+- **多主题支持：** 项目提供了多种内置主题（普通、黑暗、自定义），以及丰富的主题定制选项。
+- **多布局支持：** 提供多种布局选项（左侧、顶部），以满足设计偏好。
+- **错误处理：** Ace Admin 提供了常见场景的错误处理页面，如 403 和 404。
+- **仪表盘定制：** 仪表盘设计��可根据用户角色进行定制。
+- **图标支持：** Ace Admin 支持多种图标格式，包括 SVG 组件、Iconfont 和 Iconify。
+- **其他内置功能：** 包括 AI 集成、TinyMCE 编辑器、动态侧边栏、动态面包屑、标签页快捷导航、全屏模式和自适应侧边栏。
 
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
+### 3. 详细文档
+
+#### 3.1 用户管理
+
+- **登录 & 登出：** 提供安全且用户友好的登录和登出体验。
+- **用户注册：** （可选）允许新用户注册和创建账户。
+- **用户资料管理：** 允许用户更新个人资料信息、修改密码和管理个人设置。
+
+#### 3.2 RBAC 权限控制
+
+- **页面权限：** 根据用户角色动态控制不同页面的访问权限。
+- **路由守卫：** 确保用户只能访问授权的路由。
+- **指令权限：** 提供基于权限的元素可见性和功能控制。
+- **权限函数：** 提供灵活的代码级权限管理。
+
+#### 3.3 Hooks
+
+- **可重用 Hooks：** 提供一系列预构建的常用 Hooks，简化代码重用，减少样板代码。
+
+#### 3.4 多环境支持
+
+- **开发环境：** 提供本地开发和测试功能。
+- **测试环境：** 支持预发布测试和验证。
+- **生产环境：** 优化应用以便部署和性能。
+
+#### 3.5 多主题支持
+
+- **普通主题：** 经典且用户友好的主题。
+- **黑暗主题：** 适合低光环境的现代主题。
+- **自定义主题** 允许开发者创建和应用自定义主题。
+
+#### 3.6 多布局支持
+
+- **左侧布局：** 传统的左侧导航菜单布局。
+- **顶部布局：** 现代的顶部导航菜单布局。
+
+#### 3.7 错误处理
+
+- **403 禁止访问页面：** 当用户尝试访问无权限的资源时显示。
+- **404 未找到页面：** 当请求的资源不存在时显示。
+
+#### 3.8 仪表盘定制
+
+- **基于角色的仪表盘：** 根据用户角色定制仪表盘内容。
+
+#### 3.9 图标支持
+
+- **SVG 组件：** 允许使用 SVG 图标作为 Vue 组件。
+- **Iconfont：** 支持使用 Iconfont 图标。
+- **Iconify：** 支持流行的 Iconify 图标库。
+
+#### 3.10 其他内置功能
+
+- **AI 集成：** （可选）支持与 AI 服务集成，增强功能。
+- **TinyMCE 编辑器：** 提供一个富文本编辑器，用于创建和编辑内容。
+- **动态侧边栏：** 允许根据用户操作或路由动态更改侧边栏内容。
+- **动态面包屑：** 根据当前路由自动更新面包屑导航。
+- **标签页导航：** 允许用户在标签页界面中导航不同页面。
+- **全屏模式：** 允许用户切换应用到全屏模式。
+- **自适应侧边栏：** 根据屏幕大小自动调整侧边栏宽度。
+
+### 4. 快速开始
+
+#### 4.1 环境准备
+
+- Node.js（推荐版本 18+ 或 20+）
+- pnpm（推荐版本 8.x 或 9.x+）
+
+#### 4.2 安装
+
+1. 克隆项目仓库：
+   ```bash
+   git clone https://github.com/CodexLin/vue-ace-admin.git
+   ```
+2. 进入项目目录：
+   ```bash
+   cd vue-ace-admin
+   ```
+3. 安装 pnpm（如果未安装）：
+   ```bash
+   npm install pnpm -g
+   ```
+4. 安装项目依赖：
+   ```bash
+   pnpm i
+   ```
+
+#### 4.3 启动开发服务器
+
+```bash
+pnpm dev
 ```
 
-**Output**
+### 5. 贡献
 
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
+欢迎对 Ace Admin 的贡献！请参考 [CONTRIBUTING.md](CONTRIBUTING.md) 文件了解指南。
 
-## Custom Containers
+### 6. 许可证
 
-**Input**
+Ace Admin 采用 MIT 许可证。详情请参阅 [LICENSE](LICENSE) 文件。
 
-```md
-::: info
-This is an info box.
-:::
+### 7. 联系方式
 
-::: tip
-This is a tip.
-:::
+如有任何问题或建议，请随时联系项目维护者：
 
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-```
-
-**Output**
-
-::: info
-This is an info box.
-:::
-
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of runtime APIs](https://vitepress.dev/reference/runtime-api#usedata).
+- [AceLin](https://github.com/CodexLin)
 
